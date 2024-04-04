@@ -1,6 +1,19 @@
+:root {
+  --div-color: white;
+  --div-width: 50%;
+  --div-padding: 20px 20px;
+  --div-border: ;
+}
+
 * {
   margin: 0 auto;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: white;
 }
 
 body {
@@ -8,12 +21,35 @@ body {
   width: 80%;
 }
 
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  font-size: 25px;
+}
+
+#navbar li {
+  display: inline-block;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+span {
+  color: green;
+}
+
+i {
+  color: white;
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 180px 0 50px 0;
+  margin: 70px 0 60px 0;
   font-size: 30px;
+  text-align: center;
 }
 
 .container-palindrome {
@@ -21,14 +57,21 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .container-palindrome div:nth-of-type(1) {
-  background-color: red;
+  width: var(--div-width);
+  background-color: var(--div-color);
+  padding: var(--div-padding);
 }
 
 .container-palindrome div:nth-of-type(2) {
-  background-color: red;
+  background-color: var(--div-color);
+  width: var(--div-width);
+  margin: 20px 0;
+  font-size: 25px;
+  padding: var(--div-padding);
 }
 
 h3 {
@@ -51,18 +94,34 @@ form {
 }
 
 #text-input {
-  width: 80%;
+  width: 50%;
   font-size: 20px;
+  padding: 5px 5px;
+  text-align: center;
 }
 
 #check-btn {
   width: 100px;
+  height: 40px;
+  border: 2px solid #73ad21;
 }
 
 .information {
-  width: 40%;
-  font-size: 30px;
+  width: var(--div-width);
+  font-size: 25px;
   text-align: justify;
-  margin: 30px;
-  background-color: red;
+  margin: 10px;
+  background-color: var(--div-color);
+  padding: var(--div-padding);
+}
+
+.container-palindrome div:nth-of-type(1),
+.container-palindrome div:nth-of-type(2),
+.information {
+  border-radius: 25px;
+  border: 2px solid #73ad21;
+}
+
+.hide {
+  display: none;
 }
