@@ -1,0 +1,67 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a2a2a3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 0 0 20px 0;
+}
+
+.phoneCase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 260px;
+  height: 450px;
+  border-radius: 25px;
+}
+
+.cam {
+  position: relative;
+  top: -1vh;
+  background-color: white;
+  margin-buttom: px;
+  width: 15px;
+  height: 15px;
+  z-index: 1;
+  border-radius: 25px;
+}
+
+.screen {
+  background-color: white;
+  width: 250px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  padding-top: 20px;
+}
+
+button {
+  margin: 10px 10px 0 10px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
