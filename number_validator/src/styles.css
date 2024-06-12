@@ -54,6 +54,11 @@ body {
   flex-direction: column;
   gap: 2vh;
   padding-top: 20px;
+  overflow-y: auto;
+}
+
+input {
+  text-align: center;
 }
 
 button {
