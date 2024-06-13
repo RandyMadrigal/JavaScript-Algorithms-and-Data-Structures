@@ -1,3 +1,11 @@
+:root {
+  --bodyColor: #a2a2a3;
+  --phoneColor: #ffffff;
+  --casePhone: #000000;
+  --Valid: #00ff00;
+  --Invalid: #ff0000;
+}
+
 * {
   margin: 0 auto;
   box-sizing: border-box;
@@ -10,7 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #a2a2a3;
+  background-color: var(--bodyColor);
 }
 
 .container {
@@ -29,7 +37,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: var(--casePhone);
   width: 260px;
   height: 450px;
   border-radius: 25px;
@@ -38,7 +46,7 @@ body {
 .cam {
   position: relative;
   top: -1vh;
-  background-color: white;
+  background-color: var(--phoneColor);
   margin-buttom: px;
   width: 15px;
   height: 15px;
@@ -47,13 +55,19 @@ body {
 }
 
 .screen {
-  background-color: white;
+  background-color: var(--phoneColor);
   width: 250px;
   height: 370px;
   display: flex;
   flex-direction: column;
   gap: 2vh;
   padding-top: 20px;
+  overflow-y: auto;
+}
+
+.results-div,
+input {
+  text-align: center;
 }
 
 button {
@@ -62,6 +76,14 @@ button {
 }
 
 button:hover {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: var(--phoneColor);
+}
+
+.Valid {
+  color: var(--Valid);
+}
+
+.Invalid {
+  color: var(--Invalid);
 }
