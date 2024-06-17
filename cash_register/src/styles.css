@@ -24,6 +24,10 @@ body {
 .container {
   width: 500px;
   height: 500px;
+  text-align: center;
+}
+
+#change-due {
 }
 
 form {
