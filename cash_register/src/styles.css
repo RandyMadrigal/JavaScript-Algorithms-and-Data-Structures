@@ -7,6 +7,9 @@
 * {
   margin: 0 auto;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 body {
@@ -21,6 +24,34 @@ body {
 .container {
   width: 500px;
   height: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 5px 0;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input {
+  text-align: center;
+  height: 25px;
+  border: 2px solid #330900;
+}
+
+#purchase-btn {
+  text-transform: uppercase;
+  padding: 6px;
+  background-color: #c85030;
+  border-radius: 25px;
 }
 
 .register-header {
@@ -38,7 +69,12 @@ body {
   width: 180px;
   height: 60px;
   background-color: var(--screenColor);
-  border: 1px solid black;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .divider {
@@ -77,6 +113,8 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 5px;
+  border: 10px solid var(--registerColor);
+  font-weight: bold;
 }
 
 .register-footer {
