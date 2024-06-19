@@ -13,13 +13,13 @@
     <title>Poke Search App</title>
   </head>
   <body>
+    <h1>Pokémon Search</h1>
     <div class="container">
-      <h1>Pokémon Search</h1>
       <div class="card">
         <div class="card-header">
           <label for="searchInput">Search for Pokémon Name or ID: </label>
           <form>
-            <input type="text" name="searchInput" id="search-input" />
+            <input type="text" name="searchInput" id="search-input" required />
             <button type="submit" id="search-button">Search</button>
           </form>
         </div>
@@ -36,10 +36,9 @@
         <div class="card-body-img">
           <img src="" alt="" />
         </div>
-        <div class="card-body-type" id="types">
-          <p>type</p>
-          <p>type</p>
-        </div>
+        <div class="card-body-type" id="types"></div>
+      </div>
+      <div class="card">
         <div class="card-stats">
           <table>
             <thead>
@@ -48,29 +47,29 @@
                 <th>Stats</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="stats">
               <tr>
-                <th>HP:</th>
+                <th>HP :</th>
                 <th id="hp">0</th>
               </tr>
               <tr>
-                <th>Attack:</th>
+                <th>Attack :</th>
                 <th id="attack">0</th>
               </tr>
               <tr>
-                <th>Defense:</th>
+                <th>Defense :</th>
                 <th id="defense">0</th>
               </tr>
               <tr>
-                <th>Sp. Attack:</th>
+                <th>Sp. Attack :</th>
                 <th id="special-attack">0</th>
               </tr>
               <tr>
-                <th>Sp. Defense:</th>
+                <th>Sp. Defense :</th>
                 <th id="special-defense">0</th>
               </tr>
               <tr>
-                <th>Speed:</th>
+                <th>Speed :</th>
                 <th id="speed">0</th>
               </tr>
             </tbody>
