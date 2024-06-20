@@ -18,7 +18,7 @@ JavaScript fundamentals like variables, arrays, objects, loops, functions, the D
 
 The repository is organized as follows:
 
-
+```plaintext
 ├── Project1/
 │   ├── src/
 │   │   ├── index.html
